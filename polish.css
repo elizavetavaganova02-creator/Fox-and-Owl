@@ -28,13 +28,18 @@ body {
   position: absolute;
   left: 50%;
   bottom: 10%;
-  width: clamp(165px, 10.5vw, 190px);
-  min-height: 52px;
-  padding: 5px 14px 2px;
+  width: clamp(225px, 18vw, 310px);
+  min-height: 62px;
+  padding: 7px 17px 4px;
   border-width: 3px;
   border-radius: 22px;
-  font-size: clamp(19px, 1.25vw, 23px);
+  font-size: clamp(18px, 1.35vw, 24px);
+  line-height: .92;
   transform: translateX(-50%);
+}
+
+.home-screen .game-card h2 {
+  display: none;
 }
 
 .home-screen .game-grid {
