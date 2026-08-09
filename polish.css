@@ -19,13 +19,24 @@ body {
   position: absolute;
   left: 50%;
   bottom: 10%;
-  width: clamp(170px, 12vw, 205px);
-  min-height: 58px;
+  width: clamp(165px, 10.5vw, 190px);
+  min-height: 52px;
   padding: 5px 14px 2px;
   border-width: 3px;
   border-radius: 22px;
-  font-size: clamp(20px, 1.45vw, 25px);
+  font-size: clamp(19px, 1.25vw, 23px);
   transform: translateX(-50%);
+}
+
+.home-screen .game-grid {
+  left: 17%;
+  width: 66%;
+}
+
+.home-screen .game-card:nth-child(1) .play-btn,
+.home-screen .game-card:nth-child(2) .play-btn,
+.home-screen .game-card:nth-child(3) .play-btn {
+  left: 50%;
 }
 
 .home-screen {
@@ -46,5 +57,9 @@ body {
     width: 80%;
     margin: auto;
     transform: none;
+  }
+
+  .home-screen .game-grid {
+    width: auto;
   }
 }
