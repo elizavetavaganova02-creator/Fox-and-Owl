@@ -3,6 +3,15 @@ body {
   background-image: url('assets/home-3d.png');
 }
 
+.topbar {
+  height: 70px;
+  justify-content: flex-start;
+}
+
+.home-screen {
+  height: calc(100vh - 70px);
+}
+
 .scene-bg {
   position: absolute;
   inset: 0;
