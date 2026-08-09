@@ -1,0 +1,19 @@
+/* Final dimensional polish for the portal action buttons. */
+body {
+  background-image: url('assets/home-3d.png');
+}
+
+.home-screen .game-card .play-btn {
+  position: absolute;
+  left: 14%;
+  bottom: 0;
+  width: 72%;
+}
+
+@media (max-width: 620px) {
+  .home-screen .game-card .play-btn {
+    position: static;
+    width: 80%;
+    margin: auto;
+  }
+}
