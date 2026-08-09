@@ -24,6 +24,29 @@ body {
   user-select: none;
 }
 
+.portal-badges {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.portal-badge {
+  position: absolute;
+  top: 33%;
+  width: clamp(68px, 5.5vw, 98px);
+  aspect-ratio: 1;
+  border: 3px solid #ffe8a0;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 0 #4a200b, 0 0 22px #ffc64b99;
+}
+
+.lab-badge { left: 28%; box-shadow: 0 5px 0 #4a200b, 0 0 24px #32e3aa; }
+.uno-badge { left: 49.5%; box-shadow: 0 5px 0 #4a200b, 0 0 24px #ff9e29; }
+.bowling-badge { left: 72%; box-shadow: 0 5px 0 #4a200b, 0 0 24px #39adff; }
+
 .home-screen .game-card .play-btn {
   position: absolute;
   left: 50%;
@@ -187,6 +210,10 @@ body {
 
   .home-screen .game-grid {
     width: auto;
+  }
+
+  .portal-badges {
+    display: none;
   }
 
   .adventures-info {
