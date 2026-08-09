@@ -16,7 +16,7 @@ function shell(content,active=''){return `<div class="app"><header class="topbar
 function go(screen){state.screen=screen;if(screen==='lab')initLab();if(screen==='uno')initUno();if(screen==='bowling')initBowling();render()}
 function toggleSound(){state.sound=!state.sound;render()}
 function render(){if(state.screen==='home')renderHome();if(state.screen==='lab')renderLab();if(state.screen==='uno')renderUno();if(state.screen==='bowling')renderBowling()}
-function renderHome(){app.innerHTML=shell(`<main class="screen home-screen"><img class="scene-bg" src="assets/home-3d.png?v=20260809-9" alt="Fox and Owl magical forest game room"><div class="title-plaque"><h1 class="hero-title">Choose Your<br><span>Adventure</span></h1></div><section class="game-grid">
+function renderHome(){app.innerHTML=shell(`<main class="screen home-screen"><img class="scene-bg" src="assets/home-3d.png?v=20260809-10" alt="Fox and Owl magical forest game room"><div class="title-plaque"><h1 class="hero-title">Choose Your<br><span>Adventure</span></h1></div><section class="game-grid">
 ${homeCard('lab','🧪',"The Owl’s Laboratory",'Match each English word to the right picture and brew a magic potion.','#13a980','#9af3dc55','🦉🔬','Play')}
 ${homeCard('uno','🃏','Word Uno: Fox vs Owl','Match a color, symbol, or sound pattern. Read every word aloud!','#e27019','#ffd77c55','🦊🦉','Start')}
 ${homeCard('bowling','🎳','Forest Bowling','Choose a mystery ball, read the word, and roll for your team.','#278dcc','#73c9ff55','🦊🎳🦉','Play')}
