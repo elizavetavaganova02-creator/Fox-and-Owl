@@ -56,6 +56,118 @@ body {
   bottom: 3.5%;
 }
 
+.adventures-info {
+  position: relative;
+  padding: 70px clamp(24px, 6vw, 110px) 90px;
+  color: #fff2cc;
+  background:
+    radial-gradient(circle at 50% 0, rgba(54, 151, 120, .22), transparent 34%),
+    linear-gradient(180deg, #102f2d 0%, #0b211f 100%);
+  border-top: 7px solid #6c3212;
+  box-shadow: inset 0 5px 0 #b26727, inset 0 20px 35px #0008;
+}
+
+.info-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 38px;
+  text-align: center;
+  color: #f7c04b;
+}
+
+.info-heading > span {
+  font-size: 30px;
+  text-shadow: 0 0 16px #ffc62e;
+}
+
+.info-heading p {
+  margin: 0 0 4px;
+  color: #65d8ba;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.info-heading h2 {
+  margin: 0;
+  font: 800 clamp(34px, 4vw, 56px)/1 'Baloo 2';
+  text-shadow: 0 4px #3c1809;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(18px, 2vw, 30px);
+  max-width: 1280px;
+  margin: auto;
+}
+
+.info-card {
+  --card-color: #26b985;
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: 28px;
+  border: 4px solid #a96429;
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(104, 52, 22, .96), rgba(50, 22, 10, .98));
+  box-shadow: inset 0 2px #e3a56280, 0 10px 0 #210e07, 0 18px 30px #0007;
+}
+
+.uno-info { --card-color: #f29924; }
+.bowl-info { --card-color: #3ca8e7; }
+
+.info-icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+  border: 4px solid #fff0bd;
+  border-radius: 50%;
+  background: var(--card-color);
+  box-shadow: 0 6px 0 #261006, 0 0 22px color-mix(in srgb, var(--card-color), transparent 35%);
+  font-size: 38px;
+}
+
+.info-card small {
+  color: var(--card-color);
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.info-card h3 {
+  margin: 7px 0 12px;
+  color: #fff5d8;
+  font: 800 29px/1 'Baloo 2';
+}
+
+.info-card p {
+  margin: 0;
+  color: #e9d5b8;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.info-card button {
+  width: 100%;
+  margin-top: auto;
+  padding: 11px 14px 8px;
+  border: 3px solid #ffe9a6;
+  border-radius: 17px;
+  color: white;
+  background: var(--card-color);
+  box-shadow: 0 5px 0 #1d0b05;
+  font: 800 19px 'Baloo 2';
+}
+
+.info-card button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.12);
+}
+
 .home-screen .game-card .play-btn:hover {
   transform: translateX(-50%) translateY(-4px) scale(1.03);
 }
@@ -70,5 +182,28 @@ body {
 
   .home-screen .game-grid {
     width: auto;
+  }
+
+  .adventures-info {
+    padding: 50px 18px 65px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    min-height: 340px;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 1000px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .info-card {
+    min-height: 320px;
   }
 }
