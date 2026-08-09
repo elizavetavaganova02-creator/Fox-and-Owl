@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 1.1 seconds
-Output:
 const $ = (s, root=document) => root.querySelector(s);
 const app = $('#app');
 const wordsLab = [
@@ -49,4 +46,3 @@ function renderBowling(){const b=state.bowl;if(b.done){const tie=b.scores[0]===b
 function wordModal(ball){return `<div class="modal"><div class="modal-card"><div style="font-size:44px">${ball.special||'🎳'}</div><p class="instruction">Read this word aloud</p><div class="modal-word">${ball.word}</div>${ball.special==='🦉'?`<p>${ball.word.replace(/(ou|ow|ph)/,'·$1·')}</p>`:''}<div class="modal-actions"><button class="primary secondary" onclick="speak('${ball.word}')">🔊 Hint</button><button class="primary try-btn" onclick="bowlTry()">Try again</button><button class="primary correct-btn" onclick="bowlCorrect()">✓ Correct</button></div></div></div>`}
 function endView(icon,title,text,button,action){return `<div class="end-card" style="text-align:center"><div class="trophy">${icon}</div><h2 style="font:800 40px 'Baloo 2';margin:4px">${title}</h2><p>${text}</p><button class="primary" onclick="${action}">${button}</button></div>`}
 if(location.hash==='#lab')go('lab');else render();
-
