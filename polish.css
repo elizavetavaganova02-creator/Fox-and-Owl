@@ -17,6 +17,18 @@ body {
 .sort-flask.hint-from:after,.sort-flask.hint-to:after{position:absolute;left:50%;top:-38px;translate:-50% 0;width:36px;height:36px;display:grid;place-items:center;border:4px solid white;border-radius:50%;background:var(--hint);box-shadow:0 0 10px white,0 0 28px var(--hint);color:#3b2105;font:900 22px 'Baloo 2';z-index:9}.sort-flask.hint-from:after{content:'1'}.sort-flask.hint-to:after{content:'2'}
 @keyframes brightHint{from{filter:drop-shadow(0 0 12px white) drop-shadow(0 0 24px var(--hint))}to{filter:drop-shadow(0 0 28px white) drop-shadow(0 0 52px var(--hint)) brightness(1.35)}}
 
+/* Reference-style glass test tubes */
+.sort-flask{width:17%;height:100%;filter:drop-shadow(0 9px 5px #75411755)}
+.sort-flask:before{left:12%;right:12%;top:7%;bottom:0;border:clamp(4px,.38vw,6px) solid #9bb0ad;border-top-width:3px;border-radius:8px 8px 44% 44%/8px 8px 12% 12%;background:linear-gradient(90deg,rgba(255,255,255,.68) 0 12%,rgba(255,255,255,.14) 28%,rgba(255,249,220,.18) 62%,rgba(255,255,255,.52) 84%,rgba(190,211,207,.22));box-shadow:inset 7px 0 8px #fff8,inset -5px 0 8px #9bb7b455,0 2px 0 #fff8;z-index:4}
+.sort-flask:after{content:'';position:absolute;left:18%;top:11%;width:9%;height:72%;border-radius:10px;background:linear-gradient(rgba(255,255,255,.76),rgba(255,255,255,.12));z-index:7;pointer-events:none;filter:blur(.3px)}
+.flask-neck{left:3%;right:3%;top:0;height:13%;border:clamp(4px,.38vw,6px) solid #8da6a4;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,245,213,.28) 0 48%,rgba(255,255,255,.75) 50% 60%,rgba(157,180,177,.7) 62% 69%,rgba(255,255,255,.72) 72%);box-shadow:inset 0 3px 2px #fff,0 3px 3px #5d777455;z-index:8}
+.flask-neck:after{content:'';position:absolute;left:10%;right:10%;top:26%;height:38%;border:2px solid #b9cbc8;border-radius:50%;background:rgba(255,239,199,.2);box-shadow:inset 0 2px 2px #667d7a88}
+.liquid-stack{left:18%;right:18%;bottom:6%;height:78%;border-radius:0 0 40% 40%/0 0 9% 9%;overflow:hidden;z-index:5}
+.liquid-stack i{left:0;right:0;height:25%;background:linear-gradient(90deg,color-mix(in srgb,var(--c),white 25%) 0%,var(--c) 24% 64%,color-mix(in srgb,var(--c),black 20%) 100%);border-top:2px solid color-mix(in srgb,var(--c),white 52%);box-shadow:inset 0 7px 8px #fff5,inset 8px 0 8px #fff2,inset -6px 0 8px #0002}
+.liquid-stack i:after{content:'';position:absolute;left:0;right:0;top:-5px;height:10px;border-radius:50%;background:radial-gradient(ellipse at center,color-mix(in srgb,var(--c),white 38%),var(--c) 68%,color-mix(in srgb,var(--c),black 18%));border-top:1px solid #fff8}
+.liquid-stack i:first-child{border-radius:0 0 42% 42%/0 0 13% 13%}.liquid-stack i:last-child{border-radius:48% 48% 0 0/8px 8px 0 0}
+@media(max-width:700px){.sort-flask{width:21%;height:100%}.sort-flask:before{left:8%;right:8%}.flask-neck{left:0;right:0}.liquid-stack{left:15%;right:15%}}
+
 .topbar {
   height: 70px;
   justify-content: flex-start;
