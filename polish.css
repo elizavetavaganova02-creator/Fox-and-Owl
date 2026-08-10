@@ -28,6 +28,11 @@ body {
 .liquid-stack i:after{content:'';position:absolute;left:0;right:0;top:-5px;height:10px;border-radius:50%;background:radial-gradient(ellipse at center,color-mix(in srgb,var(--c),white 38%),var(--c) 68%,color-mix(in srgb,var(--c),black 18%));border-top:1px solid #fff8}
 .liquid-stack i:first-child{border-radius:0 0 42% 42%/0 0 13% 13%}.liquid-stack i:last-child{border-radius:48% 48% 0 0/8px 8px 0 0}
 @media(max-width:700px){.sort-flask{width:21%;height:100%}.sort-flask:before{left:8%;right:8%}.flask-neck{left:0;right:0}.liquid-stack{left:15%;right:15%}}
+.flask-number{position:absolute;left:50%;bottom:-34px;translate:-50% 0;width:31px;height:31px;display:grid;place-items:center;border:3px solid #fff0b4;border-radius:50%;background:linear-gradient(#b9631d,#77300c);box-shadow:0 4px #3d1706,0 6px 10px #0005;color:#fff7d5;font:900 18px 'Baloo 2';z-index:10}
+.tutorial-flasks{height:145px;gap:42px;margin:4px 0 14px}.tutorial-sort-flask{display:block;flex:0 0 72px;width:72px!important;height:135px!important;pointer-events:none;filter:drop-shadow(0 7px 4px #6d3c1955)}.tutorial-flasks .tutorial-sort-flask:before{left:9%;right:9%}.tutorial-flasks .flask-neck{left:0;right:0}.tutorial-flasks .liquid-stack{left:15%;right:15%;bottom:6%;height:78%;background:none;border:0}.tutorial-flasks .liquid-stack i{position:absolute;width:auto;height:25%;border-left:0;border-right:0}.tutorial-flasks>b{font-size:46px;color:#b05e1b;text-shadow:0 2px #fff;align-self:center}
+@media(max-width:700px){.flask-number{bottom:-30px;width:27px;height:27px;font-size:16px}.tutorial-flasks{height:125px;gap:28px}.tutorial-sort-flask{flex-basis:62px;width:62px!important;height:118px!important}}
+.water-game .sort-help{margin:46px 0 0}
+@media(max-width:700px){.water-game .sort-help{margin:38px 0 0}}
 
 .topbar {
   height: 70px;
