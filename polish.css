@@ -36,6 +36,9 @@ body {
 .tutorial-flasks .liquid-stack i{border-radius:0!important}
 .tutorial-flasks .liquid-stack i:first-child{border-radius:0 0 42% 42%/0 0 13% 13%!important}
 .tutorial-flasks .liquid-stack i:last-child{border-radius:48% 48% 0 0/8px 8px 0 0!important}
+.tutorial-flasks .liquid-stack i{height:calc(25% + 2px);margin:0;border-top:0;box-shadow:inset 7px 0 8px #fff2,inset -5px 0 7px #0002}
+.tutorial-flasks .liquid-stack i:after{display:none}
+.tutorial-flasks .liquid-stack i:last-child:after{display:block;top:-4px;height:9px}
 
 .topbar {
   height: 70px;
