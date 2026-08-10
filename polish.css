@@ -33,6 +33,9 @@ body {
 @media(max-width:700px){.flask-number{bottom:-30px;width:27px;height:27px;font-size:16px}.tutorial-flasks{height:125px;gap:28px}.tutorial-sort-flask{flex-basis:62px;width:62px!important;height:118px!important}}
 .water-game .sort-help{margin:46px 0 0}
 @media(max-width:700px){.water-game .sort-help{margin:38px 0 0}}
+.tutorial-flasks .liquid-stack i{border-radius:0!important}
+.tutorial-flasks .liquid-stack i:first-child{border-radius:0 0 42% 42%/0 0 13% 13%!important}
+.tutorial-flasks .liquid-stack i:last-child{border-radius:48% 48% 0 0/8px 8px 0 0!important}
 
 .topbar {
   height: 70px;
