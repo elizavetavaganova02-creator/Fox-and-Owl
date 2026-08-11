@@ -327,3 +327,23 @@ body {
 /* Final Forest Bowling viewport and scoreboard alignment */
 .bowl-game-screen{height:max(830px,calc(100vh - 70px));min-height:830px}
 .bowl-team{padding-left:35%}
+
+/* Trajectory-first bowling flow and natural pin collisions */
+.bowl-rules-overlay>div{width:min(560px,94vw);padding:34px 42px}
+.bowl-rules-overlay h2{margin-bottom:24px}
+.bowl-rules-overlay p{margin:.7em auto}
+.forest-pins i{width:clamp(23px,2.05vw,34px);height:clamp(58px,5.2vw,86px);border:2px solid #b9b3a7;border-radius:0;background:linear-gradient(90deg,#bdb9af 0%,#fffdf4 24%,#fff 58%,#cbc5b9 84%,#aaa397 100%);box-shadow:none;filter:drop-shadow(0 6px 4px #0007);clip-path:polygon(34% 0,66% 0,74% 8%,70% 23%,77% 34%,90% 49%,100% 81%,89% 96%,50% 100%,11% 96%,0 81%,10% 49%,23% 34%,30% 23%,26% 8%);transform-origin:50% 82%;will-change:transform,opacity}
+.forest-pins i:before,.forest-pins i:after{left:8%;right:8%;height:6%;background:linear-gradient(90deg,#a91f1b,#e24837 35% 70%,#9e1c18)}
+.forest-pins i:before{top:25%}.forest-pins i:after{top:33%}
+.forest-pins i:nth-child(1){--fall-x:-22px;--fall-y:34px;--fall-r:-94deg;--fall-delay:.02s}
+.forest-pins i:nth-child(2){--fall-x:34px;--fall-y:28px;--fall-r:78deg;--fall-delay:.08s}
+.forest-pins i:nth-child(3){--fall-x:-38px;--fall-y:25px;--fall-r:-72deg;--fall-delay:.05s}
+.forest-pins i:nth-child(4){--fall-x:-52px;--fall-y:18px;--fall-r:-108deg;--fall-delay:.13s}
+.forest-pins i:nth-child(5){--fall-x:18px;--fall-y:39px;--fall-r:88deg;--fall-delay:.04s}
+.forest-pins i:nth-child(6){--fall-x:49px;--fall-y:20px;--fall-r:112deg;--fall-delay:.11s}
+.forest-pins i:nth-child(7){--fall-x:-62px;--fall-y:12px;--fall-r:-84deg;--fall-delay:.16s}
+.forest-pins i:nth-child(8){--fall-x:-24px;--fall-y:42px;--fall-r:-118deg;--fall-delay:.09s}
+.forest-pins i:nth-child(9){--fall-x:31px;--fall-y:43px;--fall-r:105deg;--fall-delay:.14s}
+.forest-pins i:nth-child(10){--fall-x:64px;--fall-y:14px;--fall-r:82deg;--fall-delay:.18s}
+.forest-pins i.fallen{animation:pinScatter .82s cubic-bezier(.18,.72,.24,1) var(--fall-delay) forwards}
+@keyframes pinScatter{0%{transform:translate(0,0) rotate(0);opacity:1}24%{transform:translate(0,-11px) rotate(0);opacity:1}100%{transform:translate(var(--fall-x),var(--fall-y)) rotate(var(--fall-r));opacity:.9}}
