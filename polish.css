@@ -398,3 +398,33 @@ button{display:inline-flex;align-items:center;justify-content:center;text-align:
   .bowl-title{top:6%;white-space:normal}
   .bowl-team span,.bowl-team.active span{left:28%;right:4%}
 }
+
+/* The painted plaques are part of 1672×941 artwork. Preserve that artwork ratio
+   on desktop so labels cannot drift when the browser becomes wider or shorter. */
+@media(min-width:701px){
+  .lab-game-screen,.uno-game-screen,.bowl-game-screen{
+    width:100%;
+    height:auto;
+    min-height:calc(100vw * 941 / 1672);
+    aspect-ratio:1672/941;
+  }
+  .lab-room-bg,.uno-room-bg,.bowl-room-bg{object-fit:fill}
+
+  .home-screen .title-plaque{left:29%;top:5%;width:42%;height:22%}
+  .home-screen .hero-title{font-size:clamp(42px,4.15vw,70px);line-height:.72}
+
+  .lab-title,.uno-title,.bowl-title{display:flex;align-items:center;justify-content:center;padding:0}
+  .lab-title{left:50%!important;top:2.2%;width:72%;height:20.5%;font-size:clamp(42px,4.45vw,74px)}
+  .uno-title{left:50%!important;top:1%;width:69%;height:30%;font-size:clamp(38px,3.75vw,63px)}
+  .bowl-title{left:50%!important;top:0;width:62%;height:18%;font-size:clamp(42px,4.2vw,70px)}
+
+  .lab-back,.uno-back,.bowl-back{
+    left:1.7%;top:2.2%;width:11.8%;height:7.3%;
+    padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;
+    color:#fff0bd;text-shadow:0 3px #4b210b;
+  }
+
+  .bowl-team span,.bowl-team.active span{
+    left:35%;right:5%;top:50%;transform:translateY(-50%);
+  }
+}
