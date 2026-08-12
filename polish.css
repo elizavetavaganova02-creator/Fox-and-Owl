@@ -378,3 +378,23 @@ button{display:inline-flex;align-items:center;justify-content:center;text-align:
 
 @media(max-width:700px){.lab-title,.uno-title,.bowl-title{left:50%!important;width:68%!important;transform:translateX(-50%)}}
 @media(max-width:620px){.portal-badges{display:none}}
+
+/* Keep every heading visually centered inside its painted wooden plaque. */
+.home-screen .title-plaque{top:5.5%;height:22%}
+.home-screen .hero-title{width:100%;text-align:center}
+.lab-title{top:3.4%;white-space:nowrap}
+.uno-title{top:6%;white-space:nowrap}
+.bowl-title{top:2%;white-space:nowrap}
+
+/* Team copy belongs in the open text area of the painted score panels. */
+.bowl-team{position:relative;padding:0}
+.bowl-team span,.bowl-team.active span{position:absolute;left:35%;right:5%;top:50%;height:auto;transform:translateY(-50%);align-items:flex-start;justify-content:center;text-align:left}
+.bowl-team strong,.bowl-team b,.bowl-team small{display:block;width:100%;text-align:left}
+
+@media(max-width:700px){
+  .home-screen .title-plaque{top:4.5%}
+  .lab-title{top:5.5%;white-space:normal}
+  .uno-title{top:6%;white-space:normal}
+  .bowl-title{top:6%;white-space:normal}
+  .bowl-team span,.bowl-team.active span{left:28%;right:4%}
+}
